@@ -1,2 +1,3 @@
 ﻿# project-music-app
-Build Rest-APi Website with ReactJS, NodeJS, TailwindCSS, Firebase, MongoDB
+The project-music-app is a RESTful website built using React.js, Notion Framer, Express.js, TailwindCSS, Firebase, and MongoDB. 
+It delivers a seamless music streaming experience with a modern UI and efficient backend integration.
