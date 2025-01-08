@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body {
+    background: #f5f3f3;
+    margin: 0;
+    font-family: "Jost", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* Hero */
+.buttonMusic {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttonMusic:hover {
+  background-color: #00ff77;
+  box-shadow: 0px 15px 20px rgba(116, 233, 175, 0.4);
+  color: #fff;
+  transform: translateY(-10px);
+}
+
+.buttonMusic:active {
+  transform: translateY(-1px);
+}
+
+
+/* React Audio Player */
+.rhap_container{
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.rhap_play-pause-button{
+  color: #f96161 !important;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_play-pause-button:hover{
+  transform: scale(1.2);
+}
+
+.rhap_forward-button, .rhap_rewind-button, .rhap_skip-button, .rhap_volume-button, .rhap_repeat-button{
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_forward-button:hover, .rhap_rewind-button:hover, .rhap_skip-button:hover, .rhap_volume-button:hover, .rhap_repeat-button:hover{
+  transform: scale(1.2);
+  color : #555 !important;
+}
+
+.rhap_progress-filled{
+  background-color: #f96161 !important;
+}
+
+.rhap_progress-indicator, .rhap_volume-indicator{
+  background: #b4b4b4  !important;
+  /* --tw-gradient-from: #F3071D;
+  --tw-gradient-to: rgb(243 7 29 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #E600FF;
+  background: linear-gradient(to bottom left, var(--tw-gradient-stops)); */
+
+}
+
+.rhap_progress-indicator:hover, .rhap_volume-indicator:hover{
+  transform: scale(1.2);
+}
+
+.rhap_download-progress, .rhap_volume-bar{
+  background-color: #ff000033 !important; 
+}
