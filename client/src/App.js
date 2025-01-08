@@ -91,7 +91,7 @@ const App = () => {
                         animate={{ opacity: 1, y: 0}}
                         exit={{ opacity: 0, y: 50}}
                         
-                        className={`fixed min-w-[700px] h-26 inset-x-0 bottom-0 bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center z-20`}
+                        className={`fixed min-w-[700px] h-26 inset-x-0 bottom-0 bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center z-20 bg-white`}
                     >
                         <MusicPlayer />
                     </motion.div>

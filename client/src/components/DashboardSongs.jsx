@@ -13,7 +13,7 @@ import { motion } from 'framer-motion'
 export const SongContainer = ({ data }) => {
   return (
     <div className='flex justify-evenly items-center'>
-      <div className='grid grid-cols-4 gap-y-8 gap-x-16 '>
+      <div className='grid grid-cols-5 gap-y-8 gap-x-16 '>
         { data && data.map((song, i) => (
           <SongCard key={song._id} data={song} index={i} type="song"/>
         ))}
