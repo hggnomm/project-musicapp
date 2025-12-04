@@ -1,6 +1,6 @@
 ﻿# project-music-app
 The project-music-app is a RESTful website built using React.js, Notion Framer, Express.js, TailwindCSS, Firebase, and MongoDB. 
-It delivers a seamless music streaming experience with a modern UI and efficient backend integration.
+It delivers a seamless music streaming experience with a modern UI and efficient backend integration. 
 
 ### Home page
 ![image](https://github.com/user-attachments/assets/e98c27e5-0d4a-41ba-b434-71b109709380)
