@@ -19,10 +19,19 @@ route(app);
 const connectDB = async () => {
   try {
     const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.pns3c.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
-    await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-    console.log("DB Connected");
+    
+
+    await mongoose.connect(uri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
+    });
+    
+    console.log("✅ Successfully connected to MongoDB!");
+    console.log(`📊 Database: ${process.env.DB_NAME}`);
   } catch (error) {
-    console.error("Database connection error:", error);
+    console.error("❌ Database connection error:", error.message);
+    process.exit(1); // Exit process if database connection fails
   }
 };
 
